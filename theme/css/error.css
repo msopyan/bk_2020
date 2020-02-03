@@ -1,0 +1,261 @@
+#fh5co-error {
+    position: absolute;
+    z-index: 1001;
+    width: 100%;
+    margin: 40px 0 0 0;
+  }
+  @media screen and (max-width: 768px) {
+    #fh5co-error {
+      margin: 0px 0 0 0;
+    }
+  }
+  #fh5co-error .header-inner {
+    height: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
+    float: left;
+    width: 100%;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    border-radius: 7px;
+  }
+  #fh5co-error h1 {
+    float: left;
+    padding: 0;
+    font-weight: 700;
+    line-height: 0;
+    font-size: 30px;
+  }
+  #fh5co-error h1 a {
+    color: #121212;
+  }
+  #fh5co-error h1 a > span {
+    color: #3E8AEE;
+  }
+  #fh5co-error h1 a:hover, #fh5co-error h1 a:active, #fh5co-error h1 a:focus {
+    text-decoration: none;
+    outline: none;
+  }
+  #fh5co-error h1, #fh5co-error nav {
+    margin: 38px 0 0 0;
+  }
+  #fh5co-error nav {
+    float: right;
+    padding: 0;
+  }
+  @media screen and (max-width: 768px) {
+    #fh5co-error nav {
+      display: none;
+    }
+  }
+  #fh5co-error nav ul {
+    padding: 0;
+    margin: 0 -0px 0 0;
+    line-height: 0;
+  }
+  #fh5co-error nav ul li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: -moz-inline-stack;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+  }
+  #fh5co-error nav ul li a {
+    color: #121212;
+    font-size: 18px;
+    padding: 10px;
+    position: relative;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+  }
+  #fh5co-error nav ul li a i {
+    line-height: 0;
+    font-size: 20px;
+    position: relative;
+    top: 3px;
+  }
+  #fh5co-error nav ul li a:after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    bottom: 7px;
+    left: 10px;
+    right: 10px;
+    background-color: #fff;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    -moz-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    -o-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -moz-transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -ms-transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -o-transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  #fh5co-error nav ul li a:hover {
+    text-decoration: none;
+    color: white;
+  }
+  #fh5co-error nav ul li a:hover:after {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    -moz-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    -o-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+  #fh5co-error nav ul li a:active, #fh5co-error nav ul li a:focus {
+    outline: none;
+    text-decoration: none;
+  }
+  #fh5co-error nav ul li.cta {
+    margin-left: 20px;
+  }
+  #fh5co-error nav ul li.cta a {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+    padding-top: 7px !important;
+    padding-bottom: 7px !important;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    border-radius: 30px;
+  }
+  #fh5co-error nav ul li.cta a:hover {
+    background: #fff;
+    color: #3E8AEE;
+  }
+  #fh5co-error nav ul li.cta a:hover:after {
+    display: none;
+  }
+  #fh5co-error nav ul li.active a {
+    text-decoration: none;
+    color: #000000;
+  }
+  #fh5co-error nav ul li.active a:after {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    -moz-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    -o-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+  
+.main-error-title {
+    color: #121212;
+    font-size: 36px;
+    font-family: "Open Sans", Arial, Sans-serif;
+    margin-top: 200px;
+    margin-bottom: 50px;
+}
+.sub-error-title {
+    padding: 0;
+    padding-right: 10px;
+    margin-top: 50px;
+    color: #1212127e;
+    font-size: 1.8rem;
+    text-align: left;
+    font-weight: 400;
+}
+.sub-mini-error-title {
+    padding-right: 10px;
+    margin-top: -30px;
+    margin-bottom: 50px;
+    color: #1212127e;
+    font-size: 1.8rem;
+    line-height: 30px;
+    text-align: left;
+    font-weight: 400;
+}
+.column-30 {
+    margin-top: 500px;
+    float: right;
+    width: 50%;
+  }
+.img-error {
+    display: block;
+    width: 600px;
+    height: auto;
+    margin-top: 150px;
+    margin-left: -200px;
+}
+
+##fh5co-error-hero {
+    padding: 7em 0;
+    min-height: 700px;
+    background: #fff;
+  }
+  ##fh5co-error-hero .btn {
+    font-size: 24px;
+  }
+  ##fh5co-error-hero .btn.btn-primary {
+    padding: 14px 30px !important;
+  }
+  ##fh5co-error-hero .flexslider {
+    border: none;
+    z-index: 1;
+    margin-bottom: 0;
+  }
+  ##fh5co-error-hero .flexslider .slides {
+    position: relative;
+    overflow: hidden;
+  }
+  ##fh5co-error-hero .flexslider .slides li {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    min-height: 700px;
+  }
+  ##fh5co-error-hero .flexslider .flex-control-nav {
+    bottom: 40px;
+    z-index: 1000;
+  }
+  ##fh5co-error-hero .flexslider .flex-control-nav li a {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: none;
+    width: 12px;
+    height: 12px;
+    cursor: pointer;
+  }
+  ##fh5co-error-hero .flexslider .flex-control-nav li a.flex-active {
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.7);
+  }
+  ##fh5co-error-hero .flexslider .flex-direction-nav {
+    display: none;
+  }
+  ##fh5co-error-hero .flexslider .slider-text {
+    display: table;
+    opacity: 0;
+    min-height: 700px;
+  }
+  ##fh5co-error-hero .flexslider .slider-text > .slider-text-inner {
+    display: table-cell;
+    vertical-align: middle;
+    min-height: 700px;
+  }
+  ##fh5co-error-hero .flexslider .slider-text > .slider-text-inner h2 {
+    font-size: 70px;
+    font-weight: 400;
+    color: #fff;
+  }
+  @media screen and (max-width: 768px) {
+    ##fh5co-error-hero .flexslider .slider-text > .slider-text-inner h2 {
+      font-size: 40px;
+    }
+  }
+  ##fh5co-error-hero .flexslider .slider-text > .slider-text-inner .fh5co-lead {
+    font-size: 20px;
+    color: #fff;
+  }
+  ##fh5co-error-hero .flexslider .slider-text > .slider-text-inner .fh5co-lead .icon-heart {
+    color: #d9534f;
+  }
+  
