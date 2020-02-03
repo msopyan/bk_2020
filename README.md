@@ -1,4 +1,4 @@
-# Notula Website V3
+# Notula Website V4
 
 Selamat datang di Repository Notula Website V3.  Repository ini merupakan pusat dari semua kode yang dibutuhkan dalam membangun sistem Website V3. Website ini sendiri merupakan sebuah website yang dibangun khusus untuk kebutuhan PT. Bahasa Kinerja Utama.  
 
@@ -14,7 +14,7 @@ Pengetahuan yang dibutuhkan:
 2. [HTML](https://www.w3schools.com/html/html_intro.asp)
 3. [CSS](https://www.w3schools.com/css/)
 4. [PHP](https://www.php.net/)
-5. [Code Ignither](https://codeigniter.com/)
+5. [CodeIgnither](https://codeigniter.com/)
 6. [Database SQL](https://www.mysql.com/)
 
 Pastikan juga tool's pendung (XAMPP/WAMP/AMPPS ...) sudah terinstall di komputer development yang akan dipakai.
@@ -30,9 +30,10 @@ Pastikan juga tool's pendung (XAMPP/WAMP/AMPPS ...) sudah terinstall di komputer
 Berikut adalah daftar folder penting yang dibutuhkan dalam membangun website ini: 
 
 #### *Application*
-- _./src/app_ : Berisi fungsi yang dibutuhkan untuk menjalankan server website.
-- _./src/utils_ : Berisi fungsi utilitas yang dapat digunakan untuk membantu dalam melakukan handling data flow. 
-- _./src/app/routes_ : Berisi file yang dibutuhkan _routing server website_. Routes disini menuggunakan standar express.js.
+- _./application/config_ : Berisi fungsi yang dibutuhkan untuk menjalankan server website.
+- _./application/controllers_ : Berisi fungsi utilitas yang dapat digunakan untuk membantu dalam melakukan handling data flow. 
+- _./application/models_ : Berisi file yang dibutuhkan _routing server website_. Routes disini menuggunakan standar express.js.
+- _./application/views_ : Berisi file template laman website
 
 #### *Assets*
 - _./src/public/assets_ : Berisi aset gambar yang digunakan pada laman website.
@@ -42,10 +43,7 @@ Berikut adalah daftar folder penting yang dibutuhkan dalam membangun website ini
 - _./src/public/build_ : (Dibuat otomatis oleh sistem) Berisi bundle javascript dan css yang telah dibuat sebelumnya pada _./src/public/lib_ dan _./src/public/styles_. *Jangan melakukan editing pada folder ini, karena pasti akan ditulis ulang oleh sistem*
 
 #### *System*
-- _./src/views_ : Berisi template laman website. Menggunakan pug sebagai template engine nya.
-- _./src/views/layouts_ : Berisi template _screens_ atau laman website.
-- _./src/views/mixins_ : Berisi template _functions_ komponen pada laman website. 
-- _./src/views/fluffy_ : Berisi template testing atau sandbox mencoba pug *Tidak digunakan*
+Folder ini berisi file inti kerangka kerja. Tidak disarankan untuk membuat perubahan dalam direktori ini adalah composer.json dan composer.lock
 
 ### Important Files
 
@@ -54,7 +52,7 @@ Berikut adalah daftar folder penting yang dibutuhkan dalam membangun website ini
 - _./.htaccess_ : File yang berisi konfigurasi webpack.
 - _./application/config/database.php_ : File yang berisi definisi server website. 
 - _./application/controller_ : File javascript laman website yang utama. Berisi runner on start.
-- _./application/model_ : File yang berisi basis laman HTML yang digunakan pada website. Masukkan library HTML CSS dan Javascript disini. Menggunakan pug.
+- _./application/models_ : File yang berisi basis laman HTML yang digunakan pada website. Masukkan library HTML CSS dan Javascript disini. Menggunakan pug.
 - _./application/view_ 
 
 ### Troubleshooting

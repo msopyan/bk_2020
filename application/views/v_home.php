@@ -167,14 +167,14 @@
        			</div>
 			</div>
 			<div class="col-md-12 text-center">
-				<p><a href="<?php echo base_url().'artikel'?>" class="btn btn-primary btn-outline with-arrow">View More <i class="icon-arrow-right"></i></a></p>
+				<p><a href="<?php echo base_url().'services'?>" class="btn btn-primary btn-outline with-arrow">View More <i class="icon-arrow-right"></i></a></p>
 			</div>
 		</div>
 	</div>
 	
 	<div id="fh5co-client" class="animate-box">
 		<div class="container">
-			<div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
+			<div class="text-center fh5co-heading">
 				<h2>Klien kami yang luar biasa</h2>
 			</div>
 			<div class="row">
