@@ -73,8 +73,8 @@
 		   		<div class="container">
 		   			<div class="col-lg-8 text-left js-fullheight slider-text">
 		   				<div class="slider-text-inner">
-		   					<h3 class="main-title">Solusi pemprosesan bahasa alami dan kecerdasan buatan dalam bidang teknologi suara bahasa Indonesia untuk bisnis Anda.</h3>
-							<p class="sub-title">Kami membantu anda untuk dapatkan keinginan dan kemudahaan audien dengan kecanggihan teknologi kecerdasan buatan.</p>   
+		   					<h3 class="main-title">Solusi Kecerdasan Buatan untuk Bahasa Indonesia</h3>
+							<p class="sub-title">Cari tahu bagaimana Pemrosesan Bahasa Alami dan Teknologi Kecerdasan Buatan dalam Bahasa Indonesia memberikan solusi untuk anda.</p>   
 							<p><a href="#" class="btn btn-primary btn-lg">Get started</a></p>
 		   				</div>
 		   			</div>
