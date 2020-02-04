@@ -48,7 +48,7 @@
 						<li><a href="<?php echo base_url().'services'?>">Solusi</a></li>
 						<li><a href="<?php echo base_url().'blog'?>">Blog</a></li>
 						<li><a href="<?php echo base_url().'career'?>">Karir</a></li>
-						<li><a href="<?php echo base_url().'contact'?>">Kontak</a></li>
+						<li><a href="<?php echo base_url().'contact'?>">Hubungi Kami</a></li>
 					</ul>
 				</nav>
 			</div>

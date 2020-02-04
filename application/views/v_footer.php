@@ -43,8 +43,8 @@
 				<ul class="float">
 					<li><a href="<?php echo base_url().'about'?>">Tentang Kami</a></li>
 					<li><a href="<?php echo base_url().'press'?>">Press</a></li>
-					<li><a href="<?php echo base_url().'karir'?>">Karir</a></li>
-					<li><a href="<?php echo base_url().'kontak'?>">Kontak</a></li>
+					<li><a href="<?php echo base_url().'career'?>">Karir</a></li>
+					<li><a href="<?php echo base_url().'contact'?>">Hubungi Kami</a></li>
 				</ul>
 			</div>	
 		</div>
