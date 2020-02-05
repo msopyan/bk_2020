@@ -12,7 +12,7 @@
 *
 * ======================================================= */
 body {
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: Montserrat;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.7;
@@ -40,14 +40,14 @@ p {
 
 h1, h2, h3, h4, h5, h6, figure {
   color: #000;
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: Montserrat;
   font-weight: 400;
   margin: 0 0 30px 0;
 }
 .main-title {
   color: #ffffff;
   font-size: 36px;
-  font-family: "Open Sans", Arial, Sans-serif;
+  font-family: Montserrat;
   margin-bottom: 50px;
 }
 .sub-title {
@@ -79,7 +79,7 @@ h1, h2, h3, h4, h5, h6, figure {
 .btn {
   margin-bottom: 1px;
   margin-top: 1px;
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: Montserrat;
   font-size: 16px;
   font-weight: 400;
   -webkit-border-radius: 30px;
@@ -1476,7 +1476,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 .text-call-action {
   color: #000000;
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: Montserrat;
   font-size: 28px;
 }
 
@@ -1484,6 +1484,18 @@ h1, h2, h3, h4, h5, h6, figure {
 h2{
   text-align:center;
   padding: 20px;
+}
+h5{
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.33;
+  letter-spacing: normal;
+  text-align: left;
+  color: #707070;
+  padding: 15px;
 }
 
 /* Client */
@@ -1562,6 +1574,11 @@ h2{
   font-size: 14px;
   line-height: 30px;
 }
+.link-apply {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 30px;
+}
 @media screen and (max-width: 1000px) {
   .column-66,
   .column-33 {
@@ -1572,3 +1589,56 @@ h2{
     margin: auto;
   }
 }
+
+/* Career */
+#fh5co-value, .fh5co-services {
+  padding: 7em 0;
+}
+@media screen and (max-width: 768px) {
+  #fh5co-value, .fh5co-services {
+    padding: 3em 0;
+  }
+}
+#fh5co-value .item-block, .fh5co-services .item-block {
+  margin-bottom: 7em;
+  float: left;
+}
+#fh5co-value .item-block .icon, .fh5co-services .item-block .icon {
+  display: block;
+  margin-bottom: 30px;
+}
+#fh5co-value .item-block .icon img, .fh5co-services .item-block .icon img {
+  max-width: inherit;
+  height: 90px;
+  margin: 0 auto;
+}
+#fh5co-value .item-block h3, .fh5co-services .item-block h3 {
+  font-size: 20px;
+}
+#fh5co-value .item-block p:last-child, .fh5co-services .item-block p:last-child {
+  margin-bottom: 0;
+}
+.u-align-left {
+    text-align: left !important;
+}
+/* life */
+#fh5co-life {
+  padding: 7em 0;
+  position: relative;
+  clear: both;
+  background: #f7f7f7;
+}
+
+.table {
+  font-family: Montserrat;
+  border-collapse: collapse;
+  width: 100%;
+}
+.link{
+  position: relative;
+  padding: 30px;  
+}
+.content-center {
+  justify-content: center;
+}
+

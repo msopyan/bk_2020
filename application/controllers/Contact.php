@@ -20,7 +20,7 @@ class Contact extends CI_Controller{
 		//$marker['position']=$long.','. $lat;
 		//$this->googlemaps->add_marker($marker);
 		//$x['map']=$this->googlemaps->create_map();
-		$this->load->view('v_kontak');
+		$this->load->view('contact');
 	}
 
 	function kirim_pesan(){

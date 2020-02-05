@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>M-Techno | Log in</title>
+  <title>Administrator| Log in</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <link rel="shorcut icon" type="text/css" href="<?php echo base_url().'assets/images/favicon.png'?>">
@@ -55,7 +55,7 @@
     
     <!-- /.social-auth-links -->
     <hr/>
-    <p><center>Copyright <?php echo '2017'?> by M Fikri Setiadi <br/> All Right Reserved</center></p>
+    <p><center>Copyright <?php echo '2020'?> by PT Bahasa Kinerja Utama<br/> All Right Reserved</center></p>
   </div>
   <!-- /.login-box-body -->
 </div>

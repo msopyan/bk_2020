@@ -74,7 +74,94 @@
 		  	</ul>
 	  	</div>
     </aside>
-    
+
+    <div id="fh5co-value" class="animate-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3 text-left fh5co-heading">
+					<h2>Our Value</h2>
+				</div>
+				<div class="col-md-4 text-center item-block">
+					<span class="icon"><img src="<?php echo base_url().'theme/images/1.png'?>" class="img-responsive"></span>
+					<h3>Terbaik</h3>
+					<p>Percayakan pekerjaan rutin kepada kecerdasan buatan untuk hasil yang akurat.</p>
+				</div>
+				<div class="col-md-4 text-center item-block">
+					<span class="icon"><img src="<?php echo base_url().'theme/images/2.png'?>" class="img-responsive"></span>
+					<h3>Terbaik</h3>
+					<p>Dengan otomatisasi, mempermudah pelanggan dalam mengakses layanan bisnis Anda.</p>
+				</div>
+				<div class="col-md-4 text-center item-block">
+					<span class="icon"><img src="<?php echo base_url().'theme/images/3.png'?>" class="img-responsive"></span>
+					<h3>Terbaik</h3>
+					<p>AI dapat belajar dari data yang dikumpulkan untuk memprediksi kejadian di masa depan.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <div id="fh5co-life" class="animate-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
+					<h2>Life at Bahasa Kita!</h2>
+				</div>
+			</div>
+			<div class="row">
+        		<div class="column-33" class="animate-box">
+          			<img src="<?php echo base_url().'theme/images/img-konten-home-notula.png'?>" alt="App" width="335" height="340">
+        		</div>
+        		<div class="column-66">
+          			<h1 class="large-font">Flexible Working Hours</h1>
+            		<p class="text-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        		</div>
+      		</div>
+			<div class="container">
+      			<div class="row">
+        			<div class="column-66" >
+          				<h1 class="large-font">Casual and Routin Sport Event</h1>
+            			<p class="text-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          			</div>
+          			<div class="column-33">
+         				<img src="<?php echo base_url().'theme/images/img-konsultasi-home.png'?>" width="330" height="340" >
+       				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+    <div id="fh5co-value" class="animate-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
+					<h2>Available Jobs</h2>
+					<p>Join us in growing the most important platform in empowering progress of businesses and professionals. Today, we are 350-strong company and we are looking for more talents.</p>
+				</div>
+				<div class="col-md-12 col-sm-12 col-sm-push-0 col-xs-12 col-xs-push-0">
+					<table>
+						<tr>
+							<th>Departemen</th>
+							<th>Posisi</th>
+							<th>Kota</th>
+						</tr>
+						<tr>
+							<td>Finance</td>
+							<td>Account Payable</td>
+							<td>Jakarta</td>
+							<td><a href="<?php echo base_url().'00001'?>" class="link">Apply Now</a></td>
+						</tr>
+						<tr>
+							<td>Marketing and Business</td>
+							<td>Performance Marketing Specialist Empowering Progress of Businesses</td>
+							<td>Jakarta</td>
+							<td><a href="<?php echo base_url().'00001'?>" class="link">Apply Now</a></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<?php $this->load->view('v_footer');?>
 	</div>
@@ -90,9 +177,6 @@
 	<script src="<?php echo base_url().'theme/js/jquery.waypoints.min.js'?>"></script>
 	<!-- Flexslider -->
 	<script src="<?php echo base_url().'theme/js/jquery.flexslider-min.js'?>"></script>
-	<!-- Google Map -->
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>
-	<script src="<?php echo base_url().'theme/js/google_map.js'?>"></script>
 
 	<!-- MAIN JS -->
 	<script src="<?php echo base_url().'theme/js/main.js'?>"></script>

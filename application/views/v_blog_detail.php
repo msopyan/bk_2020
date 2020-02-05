@@ -43,8 +43,7 @@
     <meta property="og:image" content="<?php echo $img?>" />
     <meta property="og:image:width" content="460" />
     <meta property="og:image:height" content="440" />
-		<link rel="shorcut icon" type="text/css" href="<?php echo base_url().'assets/images/favicon.png'?>">
-
+		
 	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- Animate.css -->
@@ -71,16 +70,14 @@
 	<header id="fh5co-header" role="banner">
 		<div class="container">
 			<div class="header-inner">
-				<h1><a href="<?php echo base_url().''?>">TECHNO<span>.</span></a></h1>
+				<a href="<?php echo base_url().''?>" title="Go to Home"><img alt="bk logo" class="logo" src="https://bahasakita.co.id/assets/mylogo.png"</a>
 				<nav role="navigation">
 					<ul>
-						<li><a href="<?php echo base_url().''?>">Home</a></li>
-						<li><a href="<?php echo base_url().'about'?>">About</a></li>
-						<li><a href="<?php echo base_url().'portfolio'?>">Portfolio</a></li>
-						<li class="active"><a href="<?php echo base_url().'artikel'?>">Blog</a></li>
-						<li><a href="<?php echo base_url().'gallery'?>">Gallery</a></li>
-						<li><a href="<?php echo base_url().'kontak'?>">Contact</a></li>
-						<li class="cta"><a href="<?php echo base_url().'portfolio'?>">Get started</a></li>
+						<li><a href="<?php echo base_url().'about'?>">Tentang Kami</a></li>
+						<li><a href="<?php echo base_url().'services'?>">Solusi</a></li>
+						<li><a href="<?php echo base_url().'blog'?>">Blog</a></li>
+						<li><a href="<?php echo base_url().'career'?>">Karir</a></li>
+						<li><a href="<?php echo base_url().'contact'?>">Hubungi Kami</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -91,13 +88,13 @@
 	<aside id="fh5co-hero" clsas="js-fullheight">
 		<div class="flexslider js-fullheight">
 			<ul class="slides">
-		   	<li style="background-image: url(<?php echo base_url().'theme/images/slide_2.jpg'?>);">
+		   	<li style="background-color: #3E8AEE">
 		   		<div class="overlay-gradient"></div>
 		   		<div class="container">
 		   			<div class="col-md-10 col-md-offset-1 text-center js-fullheight slider-text">
 		   				<div class="slider-text-inner">
-		   					<h2>Enjoy the Blog</h2>
-		   					<p class="fh5co-lead"> Awesome source code by <a href="http://mfikri.com/" target="_blank">M Fikri Setiadi</a></p>
+		   					<h2>Blog</h2>
+		   					<p class="fh5co-lead"> Read the latest new and stories about </p>
 		   				</div>
 		   			</div>
 		   		</div>

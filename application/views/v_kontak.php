@@ -64,7 +64,7 @@
 		   		<div class="container">
 		   			<div class="col-md-10 col-md-offset-1 text-center js-fullheight slider-text">
 		   				<div class="slider-text-inner">
-		   					<h2>Get in touch. Don't be shy.</h2>
+		   					<h3 class="main-title">Get in touch. Don't be shy.</h3>
 		   					<p class="fh5co-lead">Kami siap melayani Anda 24/7</p>
 		   				</div>
 		   			</div>
@@ -79,9 +79,7 @@
 			<div class="row">
 				<div class="col-md-3">
 					<h3>Hubungi Kami</h3>
-					
-						<p>Untuk informasi tambahan, demo, dan pertanyaan lain, silahkan mengisi formulir berikut dan kami akan memberikan balasan secepatnya.</p>
-
+					<p>Untuk informasi tambahan, demo, dan pertanyaan lain, silahkan mengisi formulir berikut dan kami akan memberikan balasan secepatnya.</p>
 				</div>
 
 				<div class="col-md-8 col-md-push-1 col-sm-12 col-sm-push-0 col-xs-12 col-xs-push-0">

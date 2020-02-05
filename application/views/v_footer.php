@@ -1,7 +1,7 @@
 	<footer id="fh5co-footer" role="contentinfo">
 		<div class="container">
 			<div class="col-md-4 col-sm-12 col-sm-push-0 col-xs-12 col-xs-push-0">
-				<a href="<?php echo base_url().''?>" title="Logo"><img class="footer-logo" src="assets/images/mylogo.png" alt="Logo"/></a>
+				<a href="<?php echo base_url().''?>" title="Logo"><img class="footer-logo" src="https://bahasakita.co.id/assets/mylogo.png" alt="Logo"/></a>
 				<p>Jl. H. Naman No.4, RT.1/RW.4, Pd. Klp., Kec. Duren Sawit, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13450</p>
 				<p>info@bahasakita.co.id</p>
 				<p>+62 822-2771-1137</p>
