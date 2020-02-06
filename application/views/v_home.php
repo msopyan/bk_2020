@@ -242,7 +242,7 @@
 					<p>Tertarik untuk mendapatkan solusi Kecerdasan Buatan dengan kami</p>
 				</div>
 				<div class="col-md-1 col-md-push-1">
-					<p><a href="<?php echo base_url().'00001'?>" class="btn btn-primary btn-outline with-arrow">Get started <i class="icon-arrow-right"></i></a></p>
+					<p><a href="<?php echo base_url().'portfolio'?>" class="btn btn-primary btn-outline with-arrow">Get started <i class="icon-arrow-right"></i></a></p>
 				</div>
 			</div>
 		</div>

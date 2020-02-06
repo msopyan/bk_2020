@@ -73,9 +73,107 @@
 		  	</ul>
 	  	</div>
     </aside>
+
+   <div id="principal-content">
+		<div class="container bootstrap snippet">
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
+					<h2>We Create The Best Product to Support your Activity and Business</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<article>
+						<div class="row" id="design">
+							<div class="col-md-4 ">
+									<div class="home-design-info">
+										<figure>
+											<img src="<?php echo base_url().'theme/images/img-konsultasi-home.png'?>" width="330" height="340" >
+										</figure>
+									</div>	
+							</div> <!-- 4 -->	
+							<div class="col-md-6">
+								<div class="deets">
+									<h3 class="text-primary"><span class="glyphicon glyphicon-arrow-right"></span>Notula</h3>	
+									<p>Hello, this is my personal description
+                                        I am writing texts that come out of my mind
+                                        in order not to lorem ipsum
+                                        the following will say that bootdey is a gallery of snippets for bootstrap
+                                        Csss Js HTML codes.</p>
+                                    <div class="col-md-6">
+										<p><a href="<?php echo base_url().'#'?>" class="btn btn-primary btn-outline with-arrow">Get started <i class="icon-arrow-right"></i></a></p>
+									</div>
+								</div>
+							</div>	
+						</div> <!-- /row -->
+						<div class="row" id="design">
+							<div class="col-md-4 col-md-push-8">	
+								<div class="home-dev-info">
+										<figure>
+											<img src="<?php echo base_url().'theme/images/img-konsultasi-home.png'?>" width="330" height="340" >
+										</figure>
+									</div>
+							</div> <!-- col -->
+							<div class="col-md-6 col-md-pull-4">
+									<div class="deets">
+									<h3 class="text-primary">T-Man<span class="glyphicon glyphicon-arrow-right"></span> </h3>	
+									<p>
+                                       Here too I put much text
+                                        but not to use lorem ipsum I am writing this
+                                        Once writing we will obtain a snippet
+                                        Thanks to bootdey snippets Html Css Js    
+                                    </p>
+                                    <div class="col-md-6">
+										<p><a href="<?php echo base_url().'#'?>" class="btn btn-primary btn-outline with-arrow">Get started <i class="icon-arrow-right"></i></a></p>
+									</div>
+								</div>						
+							</div> <!-- col -->	
+						</div> <!-- /row -->
+						<div class="row" id="design">
+							<div class="col-md-4">
+									<div class="home-design-info">
+										<figure>
+											<img src="<?php echo base_url().'theme/images/img-konsultasi-home.png'?>" width="330" height="340" >
+										</figure>
+									</div>	
+							</div> <!-- 4 -->	
+							<div class="col-md-6">
+								<div class="deets">
+									<h3 class="text-primary"><span class="glyphicon glyphicon-arrow-right"></span>Smart Speaker</h3>	
+									<p>Hello, this is my personal description
+                                        I am writing texts that come out of my mind
+                                        in order not to lorem ipsum
+                                        the following will say that bootdey is a gallery of snippets for bootstrap
+                                        Csss Js HTML codes.
+                                    </p>
+                                    <div class="col-md-6">
+										<p><a href="<?php echo base_url().'#'?>" class="btn btn-primary btn-outline with-arrow">Get started <i class="icon-arrow-right"></i></a></p>
+									</div>
+								</div>
+							</div>	
+						</div> <!-- /row -->
+					</article>
+				</div>	
+			</div>	
+		</div>
+	</div>                    
+
+
+	<div id="fh5co-call-action" class="animate-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 text-call-action col-md-8">
+					<p>Tertarik untuk mendapatkan solusi Kecerdasan Buatan dengan kami</p>
+				</div>
+				<div class="col-md-1 col-md-push-1">
+					<p><a href="<?php echo base_url().'contact'?>" class="btn btn-primary btn-outline with-arrow">Get started <i class="icon-arrow-right"></i></a></p>
+				</div>
+			</div>
+		</div>
+	</div>
     
 
-	<?php $this->load->view('v_footer');?>
+	<?php $this->load->view('v_footer');?>c
 	</div>
 
 

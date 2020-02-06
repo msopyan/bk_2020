@@ -1642,3 +1642,14 @@ h5{
   justify-content: center;
 }
 
+/* Solusi */
+#principal-content {
+  padding: 7em 0;
+  position: relative;
+  clear: both;
+}
+
+#principal-content #develop {
+    text-align: center;
+}                    
+
