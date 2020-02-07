@@ -1651,5 +1651,19 @@ h5{
 
 #principal-content #develop {
     text-align: center;
-}                    
+} 
 
+ /* TTS */
+#fh5co-value-tts {
+  padding: 7em 0;
+  position: relative;
+  clear: both;
+  background: #ffffff;
+}
+#fh5co-tts {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  position: relative;
+  clear: both;
+  background: #ffffff;
+}

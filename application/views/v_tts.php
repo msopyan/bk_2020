@@ -55,8 +55,7 @@
 		</div>
 	</header>
 
-
-    <aside id="fh5co-hero" clsas="js-fullheight">
+	<aside id="fh5co-hero" clsas="js-fullheight">
 		<div class="flexslider js-fullheight">
 			<ul class="slides">
 		   	<li style="background-color: #3E8AEE">
@@ -74,90 +73,51 @@
 	  	</div>
     </aside>
 
-   <div id="principal-content">
-		<div class="container bootstrap snippet">
+    <div id="fh5co-value-tts" class="animate-box">
+		<div class="container">
 			<div class="row">
-				<div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
-					<h2>We Create The Best Product to Support your Activity and Business</h2>
+				<div class="col-md-6 col-md-offset-3 text-left fh5co-heading">
+					<h2>Magically generate sharable smart notes that sync audio, text, and image.</h2>
+				</div>
+				<div class="col-md-4 text-center item-block">
+					<span class="icon"><img src="<?php echo base_url().'theme/images/1.png'?>" class="img-responsive"></span>
+					<h3>Terbaik</h3>
+					<p>Percayakan pekerjaan rutin kepada kecerdasan buatan untuk hasil yang akurat.</p>
+				</div>
+				<div class="col-md-4 text-center item-block">
+					<span class="icon"><img src="<?php echo base_url().'theme/images/2.png'?>" class="img-responsive"></span>
+					<h3>Terbaik</h3>
+					<p>Dengan otomatisasi, mempermudah pelanggan dalam mengakses layanan bisnis Anda.</p>
+				</div>
+				<div class="col-md-4 text-center item-block">
+					<span class="icon"><img src="<?php echo base_url().'theme/images/3.png'?>" class="img-responsive"></span>
+					<h3>Terbaik</h3>
+					<p>AI dapat belajar dari data yang dikumpulkan untuk memprediksi kejadian di masa depan.</p>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-md-12">
-					<article>
-						<div class="row" id="design">
-							<div class="col-md-4 ">
-									<div class="home-design-info">
-										<figure>
-											<img src="<?php echo base_url().'theme/images/img-konsultasi-home.png'?>" width="330" height="340" >
-										</figure>
-									</div>	
-							</div> <!-- 4 -->	
-							<div class="col-md-6">
-								<div class="deets">
-									<h3 class="text-primary"><span class="glyphicon glyphicon-arrow-right"></span>Notula</h3>	
-									<p>Hello, this is my personal description
-                                        I am writing texts that come out of my mind
-                                        in order not to lorem ipsum
-                                        the following will say that bootdey is a gallery of snippets for bootstrap
-                                        Csss Js HTML codes.</p>
-                                    <div class="col-md-6">
-										<p><a href="<?php echo base_url().'notula'?>" class="btn btn-primary btn-outline with-arrow">Get started <i class="icon-arrow-right"></i></a></p>
-									</div>
-								</div>
-							</div>	
-						</div> <!-- /row -->
-						<div class="row" id="design">
-							<div class="col-md-4 col-md-push-8">	
-								<div class="home-dev-info">
-										<figure>
-											<img src="<?php echo base_url().'theme/images/img-konsultasi-home.png'?>" width="330" height="340" >
-										</figure>
-									</div>
-							</div> <!-- col -->
-							<div class="col-md-6 col-md-pull-4">
-									<div class="deets">
-									<h3 class="text-primary">T-Man<span class="glyphicon glyphicon-arrow-right"></span> </h3>	
-									<p>
-                                       Here too I put much text
-                                        but not to use lorem ipsum I am writing this
-                                        Once writing we will obtain a snippet
-                                        Thanks to bootdey snippets Html Css Js    
-                                    </p>
-                                    <div class="col-md-6">
-										<p><a href="<?php echo base_url().'tman'?>" class="btn btn-primary btn-outline with-arrow">Get started <i class="icon-arrow-right"></i></a></p>
-									</div>
-								</div>						
-							</div> <!-- col -->	
-						</div> <!-- /row -->
-						<div class="row" id="design">
-							<div class="col-md-4">
-									<div class="home-design-info">
-										<figure>
-											<img src="<?php echo base_url().'theme/images/img-konsultasi-home.png'?>" width="330" height="340" >
-										</figure>
-									</div>	
-							</div> <!-- 4 -->	
-							<div class="col-md-6">
-								<div class="deets">
-									<h3 class="text-primary"><span class="glyphicon glyphicon-arrow-right"></span>Smart Speaker</h3>	
-									<p>Hello, this is my personal description
-                                        I am writing texts that come out of my mind
-                                        in order not to lorem ipsum
-                                        the following will say that bootdey is a gallery of snippets for bootstrap
-                                        Csss Js HTML codes.
-                                    </p>
-                                    <div class="col-md-6">
-										<p><a href="<?php echo base_url().'smartspeaker'?>" class="btn btn-primary btn-outline with-arrow">Get started <i class="icon-arrow-right"></i></a></p>
-									</div>
-								</div>
-							</div>	
-						</div> <!-- /row -->
-					</article>
-				</div>	
-			</div>	
 		</div>
-	</div>                    
+	</div>
 
+	<div id="fh5co-tts" class="animate-box fadeInUp animated">
+		<div class="container w-75">
+    		<div class="container my-1" id="general_alerts"></div>
+    			<div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
+					<h2>Let's Synthesize</h2>
+					<p>Synthesize natural high fidelity text-to-speech voice with the cutting edge machine technology.</p>
+				</div>
+    			<div class="row mt-3 px-0 px-xl-5 px-lg-5 px-md-5 px-sm-0">
+        			<div class="col-12 card card-body bg-light">
+            			<form accept-charset="UTF-8" method="POST">
+                			<textarea class="form-control" id="ttsbk-textarea" placeholder="Type in your text"rows="5" style="resize: none"></textarea>
+               					<p class="float-right mt-3" id="ttsbk-count"></p>
+                			<button class="btn btn-primary mt-3" type="submit" id="ttsbk-send">Synthesize</button>
+            			</form>
+        			</div>
+    			</div>
+    			<div class="row mt-3 px-0 px-xl-5 px-lg-5 px-md-5 px-sm-0" id="ttsbk-result-placeholder">
+    		</div>
+		</div>
+	</div>
 
 	<div id="fh5co-call-action" class="animate-box">
 		<div class="container">
@@ -172,7 +132,6 @@
 		</div>
 	</div>
     
-
 	<?php $this->load->view('v_footer');?>
 	</div>
 
@@ -187,6 +146,7 @@
 	<script src="<?php echo base_url().'theme/js/jquery.waypoints.min.js'?>"></script>
 	<!-- Flexslider -->
 	<script src="<?php echo base_url().'theme/js/jquery.flexslider-min.js'?>"></script>
+
 
 	<!-- MAIN JS -->
 	<script src="<?php echo base_url().'theme/js/main.js'?>"></script>

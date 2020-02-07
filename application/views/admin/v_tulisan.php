@@ -232,7 +232,7 @@
       <b>Version</b> 1.0
     </div>
     <strong>Copyright &copy; 2020 <a href="#">by PT Bahasa Kinerja Utama</a>.</strong> All rights reserved.
-  </footer>
+  </footer>s
 
   
   <div class="control-sidebar-bg"></div>

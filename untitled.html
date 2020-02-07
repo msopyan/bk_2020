@@ -1,0 +1,612 @@
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="./theme/css/bootstrap.css"> 
+        <link rel="stylesheet" href="./assets/audioPlayer/jQuery.AudioPlayer.css">
+        <style type="text/css">
+            .carousel-indicators li {
+                width: 
+            }
+        </style>
+		<link rel="icon" href="https://botmaster2.botika.online/assets/images/favicon.ico" type="image/x-icon">
+
+        <title>Botika Text To Speech</title>
+        <style type="text/css">
+            body {
+                background-color: #f7f7f7;
+            }
+
+            .form-group.has-feedback {
+                position: relative;
+            }
+
+            .form-control-feedback {
+                position: absolute;
+                top: .5rem;
+                right: 1rem;
+                z-index: 2;
+                display: block;   
+                text-align: center;
+                pointer-events: none;
+            }
+
+            #neural {
+                display: block;
+                background-color: #011A3D;
+                position: relative;
+            }
+
+            #neural::before {
+                background-image: url(./assets/img/neural.png);
+                background-repeat: no-repeat;
+                background-size: contain; 
+                content: "";
+                position: absolute;
+                display: block;
+                background-position: center;  
+                opacity: 0.5;
+                height: 100%;
+                width: 100%;
+            }
+
+            [data-toggle="play-audio"] {
+                cursor: pointer; 
+            }
+
+            /* Prevent scrollbars to appear when waves go out of bound */
+            .sonar-wrapper {
+                position: relative;
+                z-index: 0;
+                overflow: hidden; 
+                background-color: #42E8E0;
+                border-radius: 20px;
+                transition: all .15s ease;
+            }
+
+            .sonar-wrapper.playing {
+                background-color: #453C9E;
+            }
+
+            /* The circle */
+            .sonar-emitter {
+                position: relative;
+                margin: 0 auto;
+                width: 40px;
+                height: 40px;
+                border-radius: 9999px;
+                background-color: #fff;
+                transition: all .15s ease;
+            }
+
+            .sonar-emitter.play {
+                background-image: url(./assets/img/play.jpg);
+                background-repeat: no-repeat;
+                background-size: cover; 
+                background-position: center; 
+                background-color: #001A3D;
+            }
+
+            .sonar-emitter.pause {
+                background-image: url(./assets/img/pause.png);
+                background-repeat: no-repeat;
+                background-size: cover; 
+                background-position: center; 
+                background-color: #fff;
+            }
+
+            /* the 'wave', same shape and size as its parent */
+            .sonar-wave {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border-radius: 9999px;
+                background-color: #fff;
+                opacity: 0;
+                z-index: -1;
+                pointer-events: none;
+            }
+
+            /*
+              Animate!
+              NOTE: add browser prefixes where needed.
+            */
+            .sonar-emitter.pause .sonar-wave {
+                animation: sonarWave 2s linear infinite;
+            }
+
+            @keyframes sonarWave {
+                from { opacity: 0.5; }
+                to { transform: scale(8); opacity: 0; }
+            }
+
+            #top-background {
+                background-color: #011A3D;
+                background-image: url(./assets/img/background.png);
+                background-repeat: no-repeat;
+                background-size: cover; 
+                background-position: center; 
+            }
+
+            @media only screen and (max-width: 480px) {
+                header .navbar {
+                    padding-left: 0px;
+                    padding-right: 0px;
+                }
+
+                header nav div.ml-auto img {
+                    height: 25px;
+                }
+
+                header .container {
+                    padding-left: 20px;
+                    padding-right: 20px;
+                }
+
+                content .container {
+                    padding-right: 25px;
+                    padding-left: 25px;
+                }
+
+                .display-4 {
+                    font-size: 2rem;
+                }
+
+                .lead {
+                    font-size: 1rem;
+                    line-height: normal;
+                    font-weight: normal;
+                }
+
+                #neural h4 {
+                    font-size: 1.2rem;
+                }
+
+                .ganti-warna {
+                    /*color: #6c757d!important;*/
+                    /*font-weight: normal !important;*/
+                }
+            }
+            audio::-webkit-media-controls-mute-button {
+                display: none !important;
+            }
+
+            audio::-webkit-media-controls-volume-slider {
+                display: none !important;
+            }
+
+            /*#btnTextAudio {
+                cursor: pointer;
+                background-color: #13cebf;
+                padding: 2px !important;
+                border-radius: 20px;
+                padding-right: 10px !important;
+                vertical-align: middle;
+                align-items: center;
+                display: flex;
+                font-size: 14px;
+                font-weight: 500;
+                color: #fff;
+                position: absolute;
+                top: 5px;
+                right: 5px;
+                transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+            }*/
+            #btnTextAudio {
+                cursor: pointer; 
+                transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1); 
+                vertical-align: middle;
+                align-items: center;
+                justify-content: center;
+                display: flex;
+                width: 125px;
+            }
+
+            #btnTextAudio:hover, #btnTextAudio:focus {
+                /*box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0,0,0,.12);*/
+            }
+
+            .componentWrapper .controls_toggle img:hover, .componentWrapper .controls_toggle img:focus {
+                background-color: #222;
+            }
+            .componentWrapper .controls_toggle.playing img:hover, .componentWrapper .controls_toggle.playing img:focus {
+                background-color: #ebecec;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="top-background">
+            <header>
+                <!-- Image and text -->
+                <nav class="navbar navbar-light">
+                    <div class="container">
+                        <a class="navbar-brand" href="https://botika.online">
+                            <img src="./assets/img/logo.png" height="40" class="d-inline-block align-top" alt=""> 
+                        </a>
+                        <div class="ml-auto font-weight-bold text-white">
+                            <img src="./assets/img/TTS_logo.png" class="align-middle" height="35">
+                            <!-- TEXT to <span style="color: #42E8E0;">SPEECH </span> 
+                            <img src="./assets/img/sound2.png" class="align-middle" height="16" style="margin-top: -5px;"> -->
+                        </div>
+                    </div>
+                </nav>
+            </header> 
+            <content>
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li> 
+                  </ol>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="jumbotron jumbotron-fluid mb-0" style="background: transparent;">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-9 col-lg-8 my-auto">
+                                        <p class="lead m-0 text-white" style="font-weight: 500;">Kami Menciptakan</p>
+                                        <h1 class="display-4 font-weight-bold m-0" style="color: #42E8E0;">Suara Buatan</h1>
+                                        <p class="lead text-white">Dengan Teknologi Natural Neural Network dalam bahasa Indonesia dengan hasil suara yang natural.</p>
+                                    </div>
+                                    <div class="col-lg-4 col-md-3">
+                                        <img src="./assets/img/computer.png" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>   
+                  </div> 
+                </div> 
+            </content>
+        </div>
+        <content>
+            <div class="container my-sm-5 mt-5" style="margin-bottom: 2rem;">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <img src="./assets/img/TTS_warna.png" class="align-middle d-block mx-auto" height="60" style="margin-bottom: 3rem;">
+                        <!-- <h1 class="text-center" style="color: #001A3D; margin-bottom: 2rem !important;">
+                            TEXT to 
+                            <span style="color: #42E8E0">SPEECH </span> 
+                            <img src="./assets/img/sound2.png" class="align-middle" height="40" style="margin-top: -5px;">
+                        </h1> -->
+                        <p class="text-center lead ganti-warna" style="color: #001A3D; margin-bottom: 1.75rem !important; font-weight: 600;">Ketik kalimat anda kami ubah menjadi suara buatan</p>
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <div class="form-group">
+                                    <label for="inputTextAudio">Text to speak:</label>
+                                    <textarea class="form-control" id="inputTextAudio" rows="3">Mohon kepada para penumpang untuk mengencangkan sabuk pengaman dan duduk dengan nyaman. Posisi tempat duduk mohon untuk tetap tegak, hingga pesawat berhasil lepas landas.</textarea>
+                                </div>
+                                <div class="row">
+
+                                    <div class="col-sm-12 col-md-4 col-lg-4">
+                                        <div class="form-group mb-0">
+                                            <select class="form-control" id="inputVoiceType">
+                                                <option value="female2">Female 1</option>
+                                                <!-- <option value="female2">Female 2</option> -->
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-md-8 col-lg-8">
+                                        <button id="btnTextAudio" class="btn btn-primary float-sm-right mx-auto mx-sm-0 mt-sm-0 mt-3" style="background-color: #007fff;">
+                                            <img src="assets/audioPlayer/image/play.jpg" height="22" class="mr-2"> PLAY
+                                        </button>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="audioPlayer mb-sm-0 mb-3 playfrominput" id="audioPlayer1" label="Female 1" type_voice="female1" style="display: none;">
+                                    <div class="componentWrapper">
+                                        <div class="controls_toggle d-flex pr-2 pl-3 generateAudio">
+                                            <span class="mr-2">Female 1</span>
+                                            <img src="assets/audioPlayer/image/play.jpg" alt="controls_toggle">
+                                        </div> 
+                                        <div class="player_progress">
+                                            <div class="progress_bg"></div>
+                                            <div class="load_progress"></div>
+                                            <div class="play_progress">
+                                                <div class="pin"></div>
+                                            </div>
+                                        </div>
+                                    </div>  
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="audioPlayer playfrominput" id="audioPlayer2" label="Female 2" type_voice="female2" style="display: none;">
+                                    <div class="componentWrapper">
+                                        <div class="controls_toggle d-flex pr-2 pl-3 generateAudio">
+                                            <span class="mr-2">Female 2</span>
+                                            <img src="assets/audioPlayer/image/play.jpg" alt="controls_toggle">
+                                        </div> 
+                                        <div class="player_progress">
+                                            <div class="progress_bg"></div>
+                                            <div class="load_progress"></div>
+                                            <div class="play_progress">
+                                                <div class="pin"></div>
+                                            </div>
+                                        </div>
+                                    </div>  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+            <div id="" style="color: #495057;">
+                <div class="container py-5">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-4 col-lg-4 mx-auto">
+                            <div class="text-center">
+                                <!-- <div class="sonar-wrapper mb-3">
+                                    <div class="sonar-emitter play" data-toggle="play-audio" data-file="./assets/audio/1.wav">  
+                                        <div class="sonar-wave">
+                                        </div>
+                                    </div>
+                                </div> -->
+                                <h4>Pengumuman di Mall</h4>
+                                <div class="audioPlayer my-4" label="" type_voice="" source="./assets/audio/1_2.wav">
+                                    <div class="componentWrapper" style="background-color: #42E8E0;">
+                                        <div class="controls_toggle d-flex px-2 generateAudio" style="background-color: #42E8E0;"> 
+                                            <img src="assets/audioPlayer/image/play.jpg" alt="controls_toggle">
+                                        </div> 
+                                        <div class="player_progress">
+                                            <div class="progress_bg"></div>
+                                            <div class="load_progress"></div>
+                                            <div class="play_progress">
+                                                <div class="pin"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-justify">“Perhatian, kepada nona Amanda Putri, dimohon menuju ke pintu keluar, karena rombongan anda akan segera melanjutkan perjalanan. Terimakasih.”</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-4 col-lg-4 mx-auto">
+                            <div class="text-center">
+                                <h4>Antrian Customer Service</h4>
+                                <div class="audioPlayer my-4" label="" type_voice="" source="./assets/audio/2_2.wav">
+                                    <div class="componentWrapper" style="background-color: #42E8E0;">
+                                        <div class="controls_toggle d-flex px-2 generateAudio" style="background-color: #42E8E0;"> 
+                                            <img src="assets/audioPlayer/image/play.jpg" alt="controls_toggle">
+                                        </div> 
+                                        <div class="player_progress">
+                                            <div class="progress_bg"></div>
+                                            <div class="load_progress"></div>
+                                            <div class="play_progress">
+                                                <div class="pin"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-justify">“Nomor antrian 25, bapak Agus silahkan menuju ke loket nomor 2”</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3 mt-sm-5">
+                        <div class="col-sm-12 col-md-4 col-lg-4 mx-auto">
+                            <div class="text-center">
+                                <h4>Voice Over ( VO ) </h4>
+                                <div class="audioPlayer my-4" label="" type_voice="" source="./assets/audio/3_2.wav">
+                                    <div class="componentWrapper" style="background-color: #42E8E0;">
+                                        <div class="controls_toggle d-flex px-2 generateAudio" style="background-color: #42E8E0;"> 
+                                            <img src="assets/audioPlayer/image/play.jpg" alt="controls_toggle">
+                                        </div> 
+                                        <div class="player_progress">
+                                            <div class="progress_bg"></div>
+                                            <div class="load_progress"></div>
+                                            <div class="play_progress">
+                                                <div class="pin"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-justify">“Hai, untuk kamu, yang lagi dengerin iklan ini, jangan lupa minum OKEFIT minuman segar penuh vitamin, untuk hidup lebih sehat.”</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-4 col-lg-4 mx-auto">
+                            <div class="text-center">
+                                <h4>Reminder</h4>
+                                <div class="audioPlayer my-4" label="" type_voice="" source="./assets/audio/4_2.wav">
+                                    <div class="componentWrapper" style="background-color: #42E8E0;">
+                                        <div class="controls_toggle d-flex px-2 generateAudio" style="background-color: #42E8E0;"> 
+                                            <img src="assets/audioPlayer/image/play.jpg" alt="controls_toggle">
+                                        </div> 
+                                        <div class="player_progress">
+                                            <div class="progress_bg"></div>
+                                            <div class="load_progress"></div>
+                                            <div class="play_progress">
+                                                <div class="pin"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-justify">“Selamat siang Bapak Budi, kami menginformasikan tagihan Kartu Kredit anda sudah jatuh tempo, mohon segera melakukan pembayaran. terimakasih”</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </content>
+        <audio hidden src="" id="playing-audio"></audio>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="./assets/js/jquery-3.3.1.slim.min.js"></script>
+        <script src="./assets/js/jquery-3.2.1.min.js"></script>
+        <script src="./assets/js/popper.min.js"></script>
+        <script src="./assets/js/bootstrap.min.js"></script>
+        <!-- jQuery.AudioPlayer.js -->
+        <!-- <script type="text/javascript" src="./assets/audioPlayer/jQuery.AudioPlayer.js"></script> -->
+        <script type="text/javascript">
+            $(document).ready(function() {
+                var elementAudio = null;
+ 
+                var audio = $('#playing-audio');
+                // $('.audioPlayer').each(function(key, value) {
+                //     $(value).attr('data-id', key);
+                //     audioARR[key] = AudioPlayer();
+                //     audioARR[key].init({
+                //         container: $(value)
+                //         ,source: ''
+                //         ,imagePath: 'assets/audioPlayer/image'
+                //         ,debuggers: false
+                //         ,allowSeek: true
+                //         ,labelAudio: $(value).attr('label')
+                //     }); 
+                // });
+                $(document).on('click', '.generateAudio.playing', function(event) {
+                    event.preventDefault();
+                    var _this = $(this).closest('.audioPlayer');
+                    $(this).removeClass('playing');
+                    $(this).find('img').attr('src', 'assets/audioPlayer/image/play.jpg');
+                    audio[0].pause();
+                });
+
+                audio.on('timeupdate', function() { 
+                    if (elementAudio === null || elementAudio == 'api') { return; } 
+                    elementAudio.find('.play_progress')
+                    .css('width', Number((this.currentTime / this.duration) * elementAudio.find('.progress_bg').width()) + 'px');
+                });
+                
+                $(document).on('click', '.generateAudio:not(.playing)', function(event) {
+                    event.preventDefault();
+                    var _this = $(this).closest('.audioPlayer');
+
+                    if (_this.attr('source')) { 
+                        audio.attr('src', _this.attr('source'));
+                        elementAudio = _this; 
+                        audio[0].play();  
+
+                        $('.generateAudio').removeClass('playing'); 
+                        $('.generateAudio img').attr('src', 'assets/audioPlayer/image/play.jpg');
+                        $(this).addClass('playing');
+                        $(this).find('img').attr('src', 'assets/audioPlayer/image/pause.png');
+                    } else {
+                        alert('No audio preview');
+                    } 
+                });
+                $(document).on('click', '[data-toggle="play-audio"]', function(event) {
+                    event.preventDefault(); 
+                    $('[data-toggle="play-audio"]').removeClass('pause').addClass('play');
+                    $('[data-toggle="play-audio"]').closest('.sonar-wrapper').removeClass('playing'); 
+                    // $('.generateAudio .sonar-emitter').removeClass('pause').addClass('play');
+                    // $('.generateAudio .sonar-wrapper').removeClass('playing');
+
+                    if ($(this).hasClass('play')) {
+                        audio = audio.attr('src', $(this).attr('data-file'));
+                        $(this).removeClass('play').addClass('pause');
+                        $(this).closest('.sonar-wrapper').addClass('playing');
+                        audio[0].play(); 
+                    } else if ($(this).hasClass('pause')) {
+                        $(this).removeClass('pause').addClass('play'); 
+                        $(this).closest('.sonar-wrapper').removeClass('playing');
+                        audio[0].pause();
+                    }
+                }); 
+
+                // $(document).on('keyup', '#inputTextAudio', function(event) {
+                //     if (event.keyCode === 13 && $(this).val()) {
+                //         event.preventDefault();
+                //         $('#btnTextAudio').trigger('click');
+                //     } else {
+                //         $('.playfrominput').fadeOut('fast');
+                //         $('.playfrominput .componentWrapper .play_progress').css('width', 0);
+                //     }
+                // }); 
+                // $('#btnTextAudio').bind("mouseenter focus", function(event) { 
+                //     $(this).attr('src', './assets/img/Tombol_TTS_2.png');
+                // });
+
+                // $('#btnTextAudio').bind("mouseleave", function(event) { 
+                //     $(this).attr('src', './assets/img/Tombol_TTS_1.png');
+                // });
+
+                $(document).on('click', '#btnTextAudio', function(event) {
+                    event.preventDefault();
+                    if ( ! $('#inputTextAudio').val().trim()) {
+                        $('#inputTextAudio').focus();
+                        return;
+                    } 
+
+                    // $(this).attr('src', './assets/img/Tombol_TTS_2.png');
+                    $.ajax({
+                        type: 'POST',
+                        url: '', 
+                        data: { 
+                            "text": $('#inputTextAudio').val().trim(),
+                            "voice": $('#inputVoiceType').val(),
+                        },  
+                        success: function(response) { 
+                            if (response.isSuccess) {   
+                                $('#btnTextAudio').html('<img src="assets/img/TTS_sound.gif" height="22">');
+                                audio = audio.attr('src', response.url); 
+                                audio[0].play(); 
+                                elementAudio = 'api';  
+                            } else if (typeof response.errorMsg != 'undefined') { 
+                                alert(response.errorMsg);
+                            }
+                        }, 
+                        error: function(xhr, textStatus, errorThrown) {
+                            console.log('error');
+                        }
+                    }); 
+                });
+
+                // $(document).on('click', '.generateAudio', function(event) {
+                //     event.preventDefault();
+                //     event.stopPropagation();
+                //     var $this = $(this);
+                //     if ( ! $('#inputTextAudio').val().trim()) {
+                //         $('#inputTextAudio').focus();
+                //         return;
+                //     }
+
+                //     $('[data-toggle="play-audio"]').removeClass('pause').addClass('play');
+                //     $('[data-toggle="play-audio"]').closest('.sonar-wrapper').removeClass('playing'); 
+                //     $('.generateAudio .sonar-emitter').removeClass('pause').addClass('play');
+                //     $('.generateAudio .sonar-wrapper').removeClass('playing');
+
+                //     var data = { 
+                //         "text": $('#inputTextAudio').val().trim(),
+                //         "voice": $(this).attr('value'),
+                //     };
+
+                //     $.ajax({
+                //         type: 'POST',
+                //         url: '', 
+                //         data: data,  
+                //         success: function(response) { 
+                //             if (response.isSuccess) {
+                //                 audio = audio.attr('src', response.url);
+                //                 $this.find('.sonar-emitter').removeClass('play').addClass('pause');
+                //                 $this.find('.sonar-wrapper').addClass('playing');
+                //                 audio[0].play();
+                //             } else if (typeof response.errorMsg != 'undefined') {
+                //                 alert(response.errorMsg);
+                //             }
+                //         }, 
+                //         error: function(xhr, textStatus, errorThrown) {
+                //             console.log('error');
+                //         }
+                //     }); 
+                // });
+
+                audio.on("ended", function() {
+                    if (elementAudio == 'api') {
+                        $('#btnTextAudio').html('<img src="assets/audioPlayer/image/play.jpg" height="22"> SPEAK IT'); 
+                    } else {
+                        $('.generateAudio').removeClass('playing'); 
+                        $('.generateAudio img').attr('src', 'assets/audioPlayer/image/play.jpg');
+                    } 
+                    elementAudio = null;
+                });
+            });
+        </script>
+    </body>
+</html>
