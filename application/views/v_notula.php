@@ -86,7 +86,7 @@
 					<h2>Magically generate sharable smart notes that sync audio and text</h2>
 				</div>
 				<div class="col-md-4 text-center item-block">
-					<span class="icon"><img src="<?php echo base_url().'theme/images/1.png'?>" class="img-responsive"></span>
+					<span class="icon"><img src="<?php echo base_url().'theme/images/notula/1.png'?>" class="img-responsive"></span>
 					<h3>RECORD</h3>
 					<p>Percayakan pekerjaan rutin kepada kecerdasan buatan untuk hasil yang akurat.</p>
 				</div>
