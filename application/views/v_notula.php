@@ -29,6 +29,7 @@
 	<link rel="stylesheet" href="<?php echo base_url().'theme/css/flexslider.css'?>">
 	<!-- Theme style  -->
 	<link rel="stylesheet" href="<?php echo base_url().'theme/css/style.css'?>">
+	<link rel="stylesheet" href="<?php echo base_url().'theme/css/main.css'?>">
 
 	<!-- Modernizr JS -->
 	<script src="<?php echo base_url().'theme/js/modernizr-2.6.2.min.js'?>"></script>
@@ -41,7 +42,7 @@
 	<header id="fh5co-header" role="banner">
 		<div class="container">
 			<div class="header-inner">
-			<a href="<?php echo base_url().''?>" title="Go to Home"><img alt="bk logo" class="logo" src="assets/images/mylogo.png"</a>
+			<a href="<?php echo base_url().''?>" title="Go to Home"><img alt="bk logo" class="logo" src="assets/images/mylogo.svg"</a>
 				<nav role="navigation">
 				<ul>
 						<li><a href="<?php echo base_url().'about'?>">Tentang Kami</a></li>
@@ -55,67 +56,121 @@
 		</div>
 	</header>
 
-	<aside id="fh5co-hero" clsas="js-fullheight">
+
+    <aside id="fh5co-hero" clsas="js-fullheight">
 		<div class="flexslider js-fullheight">
 			<ul class="slides">
-		   	<li style="background-color: #3E8AEE">
+		   	<li style="background-color: #FFF">
 		   		<div class="overlay-gradient"></div>
 		   		<div class="container">
-		   			<div class="col-md-10 col-md-offset-1 text-center js-fullheight slider-text">
+      			<div class="row">
+        			<div class="col-lg-7 text-left js-fullheight slider-text">
 		   				<div class="slider-text-inner">
-		   					<h3 class="main-title">Our Awesome Products</h3>
-		   					<p class="fh5co-lead"> Read the latest new and stories about </p>
+		   					<h3 class="main-title" style="color:blue;">Memberikan solusi dengan teknologi</h3>
+							<p class="sub-title" style="color:skyblue;">Cari tahu bagaimana Pemrosesan Bahasa Alami dan Teknologi Kecerdasan Buatan dalam Bahasa Indonesia memberikan solusi untuk anda.</p>   
+							<p><a href="#" class="btn btn-primary btn-lg">Lanjut</a></p>
 		   				</div>
 		   			</div>
-		   		</div>
-		   	</li>
-		  	</ul>
-	  	</div>
-    </aside>
+		   			<div class="sc-caSCKo haBkns"> 
+          				<img src="<?php echo base_url().'theme/images/banner.293a4f73.png'?>" alt="App">
+		   			</div>
+				</div>
+			</div>
+		</div>
+	</aside>
 
-    <div id="fh5co-value-tts" class="animate-box">
+	<div id="fh5co-value" class="animate-box">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6 col-md-offset-3 text-left fh5co-heading">
-					<h2>Magically generate sharable smart notes that sync audio, text, and image.</h2>
+					<h2>Magically generate sharable smart notes that sync audio and text</h2>
 				</div>
 				<div class="col-md-4 text-center item-block">
 					<span class="icon"><img src="<?php echo base_url().'theme/images/1.png'?>" class="img-responsive"></span>
-					<h3>Terbaik</h3>
+					<h3>RECORD</h3>
 					<p>Percayakan pekerjaan rutin kepada kecerdasan buatan untuk hasil yang akurat.</p>
 				</div>
 				<div class="col-md-4 text-center item-block">
 					<span class="icon"><img src="<?php echo base_url().'theme/images/2.png'?>" class="img-responsive"></span>
-					<h3>Terbaik</h3>
+					<h3>LIVE TRANSCRIBE</h3>
 					<p>Dengan otomatisasi, mempermudah pelanggan dalam mengakses layanan bisnis Anda.</p>
 				</div>
 				<div class="col-md-4 text-center item-block">
 					<span class="icon"><img src="<?php echo base_url().'theme/images/3.png'?>" class="img-responsive"></span>
-					<h3>Terbaik</h3>
+					<h3>SHARE</h3>
 					<p>AI dapat belajar dari data yang dikumpulkan untuk memprediksi kejadian di masa depan.</p>
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<div id="fh5co-tts" class="animate-box">
-		<div class="container w-75">
-    		<div class="container my-1" id="general_alerts"></div>
-    			<div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
-					<h2>Let's Synthesize</h2>
-					<p>Synthesize natural high fidelity text-to-speech voice with the cutting edge machine technology.</p>
+	<div id="principal-content">
+		<div class="container bootstrap snippet">
+			<div class="row">
+				<div class="col-md-10 col-md-offset-1 text-center fh5co-heading">
+					<h2>Magically generate sharable smart notes that sync audio, text, and image.</h2>
 				</div>
-    			<div class="row mt-3 px-0 px-xl-5 px-lg-5 px-md-5 px-sm-0">
-        			<div class="col-12 card card-body bg-light">
-            			<form accept-charset="UTF-8" method="POST">
-                			<textarea class="form-control" id="ttsbk-textarea" placeholder="Type in your text"rows="5" style="resize: none"></textarea>
-               					<p class="float-right mt-3" id="ttsbk-count"></p>
-                			<button class="btn btn-primary mt-3" type="submit" id="ttsbk-send">Synthesize</button>
-            			</form>
-        			</div>
-    			</div>
-    			<div class="row mt-3 px-0 px-xl-5 px-lg-5 px-md-5 px-sm-0" id="ttsbk-result-placeholder">
-    		</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<article>
+						<div class="row" id="design">
+							<div class="col-md-4 ">
+									<div class="home-design-info">
+										<figure>
+											<img src="<?php echo base_url().'theme/images/img-konsultasi-home.png'?>" width="330" height="340" >
+										</figure>
+									</div>	
+							</div> <!-- 4 -->	
+							<div class="col-md-6">
+								<div class="deets">
+									<h3 class="text-primary"><span class="glyphicon glyphicon-arrow-right"></span>Automate the process of making a close denominator</h3>	
+									<p>ranskripsi rapat secara otomatis, realtime dan aman. Dapat dilakukan secara pararel dan menghasilkan risalah tanpa harus menunggu lama.</p>
+                                    <div class="col-md-6">
+										<p><a href="<?php echo base_url().'notula'?>" class="btn btn-primary btn-outline with-arrow">Get started <i class="icon-arrow-right"></i></a></p>
+									</div>
+								</div>
+							</div>	
+						</div> <!-- /row -->
+						<div class="row" id="design">
+							<div class="col-md-4 col-md-push-8">	
+								<div class="home-dev-info">
+										<figure>
+											<img src="<?php echo base_url().'theme/images/img-konsultasi-home.png'?>" width="330" height="340" >
+										</figure>
+									</div>
+							</div> <!-- col -->
+							<div class="col-md-6 col-md-pull-4">
+									<div class="deets">
+									<h3 class="text-primary">Various meeting management system features<span class="glyphicon glyphicon-arrow-right"></span> </h3>	
+									<p>Cara baru menikmati komik dan membuat podcast cukup dengan menulisnya! Jadilah yang terpilih untuk mencoba pengalaman baru ini.</p>
+                                    <div class="col-md-6">
+										<p><a href="<?php echo base_url().'tman'?>" class="btn btn-primary btn-outline with-arrow">Get started <i class="icon-arrow-right"></i></a></p>
+									</div>
+								</div>						
+							</div> <!-- col -->	
+						</div> <!-- /row -->
+						<div class="row" id="design">
+							<div class="col-md-4">
+									<div class="home-design-info">
+										<figure>
+											<img src="<?php echo base_url().'theme/images/img-konsultasi-home.png'?>" width="330" height="340" >
+										</figure>
+									</div>	
+							</div> <!-- 4 -->	
+							<div class="col-md-6">
+								<div class="deets">
+									<h3 class="text-primary"><span class="glyphicon glyphicon-arrow-right"></span>Notula gets smarter everyday</h3>	
+									<p>Punya pertanyaan, ingin menyalakan lampu, mengganti channel televisi dan lain-lain? Suarakan keinginanmu dengan smart speaker berbahasa Indonesia dibuat oleh Bahasa Kita.</p>
+                                    <div class="col-md-6">
+										<p><a href="<?php echo base_url().'smartspeaker'?>" class="btn btn-primary btn-outline with-arrow">Get started <i class="icon-arrow-right"></i></a></p>
+									</div>
+								</div>
+							</div>	
+						</div> <!-- /row -->
+					</article>
+				</div>	
+			</div>	
 		</div>
 	</div>
 
@@ -130,9 +185,10 @@
 				</div>
 			</div>
 		</div>
-	</div>
-    
-	<?php $this->load->view('v_footer');?>
+	</div>                    
+
+
+    <?php $this->load->view('v_footer');?>
 	</div>
 
 
@@ -146,7 +202,6 @@
 	<script src="<?php echo base_url().'theme/js/jquery.waypoints.min.js'?>"></script>
 	<!-- Flexslider -->
 	<script src="<?php echo base_url().'theme/js/jquery.flexslider-min.js'?>"></script>
-
 
 	<!-- MAIN JS -->
 	<script src="<?php echo base_url().'theme/js/main.js'?>"></script>

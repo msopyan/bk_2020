@@ -61,7 +61,7 @@
 		   		<div class="container">
 		   			<div class="col-md-10 col-md-offset-1 text-center js-fullheight slider-text">
 		   				<div class="slider-text-inner">
-						   <h3 class="main-title">Pemahaman akan bahasa indonesia yang lebih baik</h3>
+						   <h3 class="main-title">Kami percaya, semua produk memiliki suaranya.</h3>
 							<p class="fh5co-lead">Kami membantu anda untuk dapatkan keinginan dan kemudahaan audien dengan kecanggihan teknologi kecerdasan buatan.</p>    
 		   				</div>
 		   			</div>
@@ -74,7 +74,7 @@
 	<div class="fh5co-about animate-box">
 		<div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
 			<h2>About Us</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p>Sejak 2015, Bahasa Kita (PT. Bahasa Kinerja Utama) merupakan perusahaan yang fokus pada pengembangan produk berbasis teknologi informasi dan komunikasi  khususnya teknologi pengenalan wicara, kecerdasan buatan, dan pemrosesan bahasa alami.</p>
 		</div>
 		<div class="container">
 			<div class="col-md-6">

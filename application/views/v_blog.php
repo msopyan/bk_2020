@@ -47,7 +47,7 @@
 	<header id="fh5co-header" role="banner">
 		<div class="container">
 			<div class="header-inner">
-				<a href="<?php echo base_url().''?>" title="Go to Home"><img alt="bk logo" class="logo" src="assets/images/mylogo.png"</a>
+				<a href="<?php echo base_url().''?>" title="Go to Home"><img alt="bk logo" class="logo" src="https://bahasakita.co.id/assets/mylogo.png"</a>
 				<nav role="navigation">
 					<ul>
 						<li><a href="<?php echo base_url().'about'?>">Tentang Kami</a></li>
@@ -98,10 +98,10 @@
 				?>
 					<div class="col-md-4">
 						<span class="icon"><img src="<?php echo base_url().'assets/images/'.$post_image;?>" class="img-responsive"></span>
-						<h3><a href="<?php echo base_url().'artikel/'.$post_slug;?>"><?php echo $post_judul;?></a></h3>
+						<h3><a href="<?php echo base_url().'blog/'.$post_slug;?>"><?php echo $post_judul;?></a></h3>
 						<span><?php echo $post_tglpost.' | '.$post_author;?></span>
 						<p><?php echo limit_words($post_isi,10).'...';?></em></p>
-						<p><a href="<?php echo base_url().'artikel/'.$post_slug;?>" class="btn btn-primary with-arrow">Selengkapnya <i class="icon-arrow-right"></i></a></p>
+						<p><a href="<?php echo base_url().'blog/'.$post_slug;?>" class="btn btn-primary with-arrow">Selengkapnya <i class="icon-arrow-right"></i></a></p>
 					</div>
 					<?php endforeach;?>
 

@@ -73,29 +73,9 @@
 		   		<div class="container">
 		   			<div class="col-lg-8 text-left js-fullheight slider-text">
 		   				<div class="slider-text-inner">
-		   					<h3 class="main-title">Solusi Kecerdasan Buatan untuk Bahasa Indonesia</h3>
+		   					<h3 class="main-title">Memberikan solusi dengan teknologi</h3>
 							<p class="sub-title">Cari tahu bagaimana Pemrosesan Bahasa Alami dan Teknologi Kecerdasan Buatan dalam Bahasa Indonesia memberikan solusi untuk anda.</p>   
-							<p><a href="#" class="btn btn-primary btn-lg">Get started</a></p>
-		   				</div>
-		   			</div>
-		   		</div>
-		   	</li>
-		   	<li style="background-image: url(<?php echo base_url().'theme/images/background_tts.png'?>);">
-		   		<div class="container">
-		   			<div class="col-lg-6 col-md-6 text-left js-fullheight slider-text">
-		   				<div class="slider-text-inner">
-		   					<h3 class="main-title">Take Your Business To The Next Level</h3>
-		   					<p><a href="#" class="btn btn-primary btn-lg">Get started</a></p>
-		   				</div>
-		   			</div>
-		   		</div>
-		   	</li>
-		   	<li style="background-image: url(<?php echo base_url().'theme/images/background_tts.png'?>);">
-		   		<div class="container">
-		   			<div class="col-lg-6 col-md-6 text-left js-fullheight slider-text">
-		   				<div class="slider-text-inner">
-		   					<h3 class="main-title">We Think Different That Others Can't</h3>
-		   					<p><a href="#" class="btn btn-primary btn-lg">Get started</a></p>
+							<p><a href="#" class="btn btn-primary btn-lg">Lanjut</a></p>
 		   				</div>
 		   			</div>
 		   		</div>
@@ -107,6 +87,9 @@
 	<div id="fh5co-why-us" class="animate-box">
 		<div class="container">
 			<div class="row">
+				<div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
+					<h2>Apa yang dapat AI berikan?</h2>
+				</div>
 				<div class="col-md-4 text-center item-block">
 					<span class="icon"><img src="<?php echo base_url().'theme/images/1.png'?>" class="img-responsive"></span>
 					<h3>Efisiensi Pengeluaran</h3>
@@ -139,7 +122,7 @@
         		</div>
         		<div class="column-66">
           			<h1 class="large-font">Produk</h1>
-            		<p class="text-content">Produk kami ini dapat mengoptimalkan dan mempermudah pekerjaan anda dalam setiap aktifitas anda tanpa membuat anda terbebani denganya. Sehingga anda bisa focus terhadap inti segala kegiatan bisnis.</p>
+            		<p class="text-content">Berbagai produk kami mulai dari efisiensi rapat dengan transkripsi otomatis, hiburan sarat dengan edukasi hingga perangkat yang mengatur berbagai IoT.</p>
           			<a href="#" class="link-product" title="Transkripsi rapat secara otomatis, realtime dan aman. Dapat dilakukan secara pararel dan menghasilkan risalah tanpa harus menunggu lama.">Notula</a>
           			<div>
             			<a href="#" class="link-product" title="Transkripsi rapat secara otomatis. real time dan lebih ringan dari Notula. Memiliki berbagai fitur yang bisa kamu tambahkan sesuai kebutuhan.">Notula Lite</a>
@@ -156,7 +139,7 @@
       			<div class="row">
         			<div class="column-66" >
           				<h1 class="large-font">Layanan</h1>
-            			<p class="text-content">Tingkatkan teknologi bisnis anda dengan kecerdasan buatan milik kami dan dapatkan solusi dalam berbagai permasalahan.</p>
+            			<p class="text-content">Suarakan produk anda di berbagai kanal  serta dapatkan insight dari pelanggan bisnis anda dengan kecerdasan buatan.</p>
           				<a href="#" class="link-product" title="Jangkau lebih banyak pelanggan dan tingkatkan efisiensi bisnis anda dengan mesin konversi teks ke suara dan sebaliknya dalam Bahasa Indonesia">Text to Speech</a>
           			<div>
             			<a href="#" class="link-product" title="Tinggalkan cara lama dan rasakan peningkatan kualitas layanan call center anda dengan teknologi Smart Call Center yang memberikan insight untuk anda dan pengalaman baru untuk pelanggan anda.">Smart Call Center</a>

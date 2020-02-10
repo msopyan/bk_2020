@@ -1558,6 +1558,12 @@ h5{
   width: 33.33333%;
   padding: 20px;
 }
+.haBkns {
+    position: absolute;
+    top: 0rem;
+    right: -1.5rem;
+    width: 66rem;
+}
 
 .large-font {
   text-align: left;
@@ -1591,7 +1597,7 @@ h5{
 }
 
 /* Career */
-#fh5co-value, .fh5co-services {
+#fh5co-value, #fh5co-jobs .fh5co-services {
   padding: 7em 0;
 }
 @media screen and (max-width: 768px) {
@@ -1616,6 +1622,37 @@ h5{
   font-size: 20px;
 }
 #fh5co-value .item-block p:last-child, .fh5co-services .item-block p:last-child {
+  margin-bottom: 0;
+}
+.u-align-left {
+    text-align: left !important;
+}
+
+#fh5co-jobs, .fh5co-services {
+  padding: 7em 0;
+}
+@media screen and (max-width: 768px) {
+  #fh5co-jobs, .fh5co-services {
+    padding: 3em 0;
+  }
+}
+#fh5co-jobs .item-block, .fh5co-services .item-block {
+  margin-bottom: 7em;
+  float: left;
+}
+#fh5co-jobs .item-block .icon, .fh5co-services .item-block .icon {
+  display: block;
+  margin-bottom: 30px;
+}
+#fh5co-jobs .item-block .icon img, .fh5co-services .item-block .icon img {
+  max-width: inherit;
+  height: 90px;
+  margin: 0 auto;
+}
+#fh5co-jobs .item-block h3, .fh5co-services .item-block h3 {
+  font-size: 20px;
+}
+#fh5co-jobs .item-block p:last-child, .fh5co-services .item-block p:last-child {
   margin-bottom: 0;
 }
 .u-align-left {

@@ -66,7 +66,6 @@
 		   				<div class="slider-text-inner">
 		   					<h3 class="main-title">Be a part of our remarkable journey</h3>
 		   					<p class="fh5co-lead"> Our people are the heart of our company. Join us to discover new opportunities that will improve your skills and help us create the best NLP/NLU and AI solutions! </p>
-                            <p><a href="#" class="btn btn-primary btn-lg">EXPLORE OPPORTUNITIES</a></p>   
                         </div>
 		   			</div>
 		   		</div>
@@ -130,11 +129,11 @@
 		</div>
 	</div>
 
-
+	<section class="jobs">
     <div id="fh5co-value" class="animate-box">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
 					<h2>Available Jobs</h2>
 					<p>Join us in growing the most important platform in empowering progress of businesses and professionals. Today, we are 350-strong company and we are looking for more talents.</p>
 				</div>
@@ -162,6 +161,7 @@
 			</div>
 		</div>
 	</div>
+	</section>
 
 	<?php $this->load->view('v_footer');?>
 	</div>

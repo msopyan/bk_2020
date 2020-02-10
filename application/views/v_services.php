@@ -77,8 +77,8 @@
    <div id="principal-content">
 		<div class="container bootstrap snippet">
 			<div class="row">
-				<div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
-					<h2>We Create The Best Product to Support your Activity and Business</h2>
+				<div class="col-md-10 col-md-offset-1 text-center fh5co-heading">
+					<h2>We Create The Best Product and Services to Support your Activity and Business</h2>
 				</div>
 			</div>
 			<div class="row">
@@ -95,11 +95,7 @@
 							<div class="col-md-6">
 								<div class="deets">
 									<h3 class="text-primary"><span class="glyphicon glyphicon-arrow-right"></span>Notula</h3>	
-									<p>Hello, this is my personal description
-                                        I am writing texts that come out of my mind
-                                        in order not to lorem ipsum
-                                        the following will say that bootdey is a gallery of snippets for bootstrap
-                                        Csss Js HTML codes.</p>
+									<p>ranskripsi rapat secara otomatis, realtime dan aman. Dapat dilakukan secara pararel dan menghasilkan risalah tanpa harus menunggu lama.</p>
                                     <div class="col-md-6">
 										<p><a href="<?php echo base_url().'notula'?>" class="btn btn-primary btn-outline with-arrow">Get started <i class="icon-arrow-right"></i></a></p>
 									</div>
@@ -117,12 +113,7 @@
 							<div class="col-md-6 col-md-pull-4">
 									<div class="deets">
 									<h3 class="text-primary">T-Man<span class="glyphicon glyphicon-arrow-right"></span> </h3>	
-									<p>
-                                       Here too I put much text
-                                        but not to use lorem ipsum I am writing this
-                                        Once writing we will obtain a snippet
-                                        Thanks to bootdey snippets Html Css Js    
-                                    </p>
+									<p>Cara baru menikmati komik dan membuat podcast cukup dengan menulisnya! Jadilah yang terpilih untuk mencoba pengalaman baru ini.</p>
                                     <div class="col-md-6">
 										<p><a href="<?php echo base_url().'tman'?>" class="btn btn-primary btn-outline with-arrow">Get started <i class="icon-arrow-right"></i></a></p>
 									</div>
@@ -140,12 +131,43 @@
 							<div class="col-md-6">
 								<div class="deets">
 									<h3 class="text-primary"><span class="glyphicon glyphicon-arrow-right"></span>Smart Speaker</h3>	
-									<p>Hello, this is my personal description
-                                        I am writing texts that come out of my mind
-                                        in order not to lorem ipsum
-                                        the following will say that bootdey is a gallery of snippets for bootstrap
-                                        Csss Js HTML codes.
-                                    </p>
+									<p>Punya pertanyaan, ingin menyalakan lampu, mengganti channel televisi dan lain-lain? Suarakan keinginanmu dengan smart speaker berbahasa Indonesia dibuat oleh Bahasa Kita.</p>
+                                    <div class="col-md-6">
+										<p><a href="<?php echo base_url().'smartspeaker'?>" class="btn btn-primary btn-outline with-arrow">Get started <i class="icon-arrow-right"></i></a></p>
+									</div>
+								</div>
+							</div>	
+						</div> <!-- /row -->
+						<div class="row" id="design">
+							<div class="col-md-4 col-md-push-8">	
+								<div class="home-dev-info">
+										<figure>
+											<img src="<?php echo base_url().'theme/images/img-konsultasi-home.png'?>" width="330" height="340" >
+										</figure>
+									</div>
+							</div> <!-- col -->
+							<div class="col-md-6 col-md-pull-4">
+									<div class="deets">
+									<h3 class="text-primary">Text to Speech<span class="glyphicon glyphicon-arrow-right"></span> </h3>	
+									<p>Jangkau lebih banyak pelanggan dan tingkatkan efisiensi bisnis anda dengan mesin konversi teks ke suara dan sebaliknya dalam Bahasa Indonesia!</p>
+                                    <div class="col-md-6">
+										<p><a href="<?php echo base_url().'tman'?>" class="btn btn-primary btn-outline with-arrow">Get started <i class="icon-arrow-right"></i></a></p>
+									</div>
+								</div>						
+							</div> <!-- col -->	
+						</div> <!-- /row -->
+						<div class="row" id="design">
+							<div class="col-md-4">
+									<div class="home-design-info">
+										<figure>
+											<img src="<?php echo base_url().'theme/images/img-konsultasi-home.png'?>" width="330" height="340" >
+										</figure>
+									</div>	
+							</div> <!-- 4 -->	
+							<div class="col-md-6">
+								<div class="deets">
+									<h3 class="text-primary"><span class="glyphicon glyphicon-arrow-right"></span>Smart Call Center</h3>	
+									<p>Pinggalkan cara lama dan rasakan peningkatan kualitas layanan call center anda dengan teknologi Smart Call Center yang memberikan insight untuk anda dan pengalaman baru untuk pelanggan anda.</p>
                                     <div class="col-md-6">
 										<p><a href="<?php echo base_url().'smartspeaker'?>" class="btn btn-primary btn-outline with-arrow">Get started <i class="icon-arrow-right"></i></a></p>
 									</div>
