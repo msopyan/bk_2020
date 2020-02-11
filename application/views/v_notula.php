@@ -29,7 +29,7 @@
 	<link rel="stylesheet" href="<?php echo base_url().'theme/css/flexslider.css'?>">
 	<!-- Theme style  -->
 	<link rel="stylesheet" href="<?php echo base_url().'theme/css/style.css'?>">
-	<link rel="stylesheet" href="<?php echo base_url().'theme/css/main.css'?>">
+
 
 	<!-- Modernizr JS -->
 	<script src="<?php echo base_url().'theme/js/modernizr-2.6.2.min.js'?>"></script>
@@ -57,26 +57,24 @@
 	</header>
 
 
-    <aside id="fh5co-hero" clsas="js-fullheight">
+    <aside id="fh5co-hero" class="js-fullheight">
 		<div class="flexslider js-fullheight">
 			<ul class="slides">
-		   	<li style="background-color: #FFF">
+		   	<li style="background-image: url(<?php echo base_url().'theme/images/background_notula.svg'?>);">
 		   		<div class="overlay-gradient"></div>
 		   		<div class="container">
-      			<div class="row">
-        			<div class="col-lg-7 text-left js-fullheight slider-text">
+		   			<div class="col-lg-8 text-left js-fullheight slider-text">
 		   				<div class="slider-text-inner">
-		   					<h3 class="main-title" style="color:blue;">Memberikan solusi dengan teknologi</h3>
-							<p class="sub-title" style="color:skyblue;">Cari tahu bagaimana Pemrosesan Bahasa Alami dan Teknologi Kecerdasan Buatan dalam Bahasa Indonesia memberikan solusi untuk anda.</p>   
+		   					<h3 class="main-title" style="color: #121212;">Notula is where conversations live.</h3>
+							<p class="sub-title" style="color: #121212;">Generate rich notes for meetings, interviews lectures, and other important.
+							Otomatis hasilkan notulen rapat yang akurat dengan teknologi Artificial Intelegent.</p>   
 							<p><a href="#" class="btn btn-primary btn-lg">Lanjut</a></p>
 		   				</div>
 		   			</div>
-		   			<div class="sc-caSCKo haBkns"> 
-          				<img src="<?php echo base_url().'theme/images/banner.293a4f73.png'?>" alt="App">
-		   			</div>
-				</div>
-			</div>
-		</div>
+		   		</div>
+		   	</li>
+		  	</ul>
+	  	</div>
 	</aside>
 
 	<div id="fh5co-value" class="animate-box">
@@ -88,17 +86,17 @@
 				<div class="col-md-4 text-center item-block">
 					<span class="icon"><img src="<?php echo base_url().'theme/images/notula/1.png'?>" class="img-responsive"></span>
 					<h3>RECORD</h3>
-					<p>Percayakan pekerjaan rutin kepada kecerdasan buatan untuk hasil yang akurat.</p>
+					<p>Record conversations using Otter on your phone or web browser. Import or sync recordings from other services. Integrate with Zoom.</p>
 				</div>
 				<div class="col-md-4 text-center item-block">
-					<span class="icon"><img src="<?php echo base_url().'theme/images/2.png'?>" class="img-responsive"></span>
+					<span class="icon"><img src="<?php echo base_url().'theme/images/notula/2.png'?>" class="img-responsive"></span>
 					<h3>LIVE TRANSCRIBE</h3>
-					<p>Dengan otomatisasi, mempermudah pelanggan dalam mengakses layanan bisnis Anda.</p>
+					<p>Get real-time streaming transcripts and, within minutes, rich, searchable notes with text, audio, images, speaker ID, and key phrases.</p>
 				</div>
 				<div class="col-md-4 text-center item-block">
-					<span class="icon"><img src="<?php echo base_url().'theme/images/3.png'?>" class="img-responsive"></span>
+					<span class="icon"><img src="<?php echo base_url().'theme/images/notula/3.png'?>" class="img-responsive"></span>
 					<h3>SHARE</h3>
-					<p>AI dapat belajar dari data yang dikumpulkan untuk memprediksi kejadian di masa depan.</p>
+					<p>Share or export voice notes to inform others and get on the same page. Create groups to invite collaborators and keep organized.</p>
 				</div>
 			</div>
 		</div>

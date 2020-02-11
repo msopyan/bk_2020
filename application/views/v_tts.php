@@ -55,43 +55,44 @@
 		</div>
 	</header>
 
-	<aside id="fh5co-hero" clsas="js-fullheight">
+	<aside id="fh5co-hero" class="js-fullheight">
 		<div class="flexslider js-fullheight">
 			<ul class="slides">
-		   	<li style="background-color: #3E8AEE">
+		   	<li style="background-image: url(<?php echo base_url().'theme/images/background_tts.svg'?>);">
 		   		<div class="overlay-gradient"></div>
 		   		<div class="container">
-		   			<div class="col-md-10 col-md-offset-1 text-center js-fullheight slider-text">
+		   			<div class="col-lg-8 text-left js-fullheight slider-text">
 		   				<div class="slider-text-inner">
-		   					<h3 class="main-title">Our Awesome Products</h3>
-		   					<p class="fh5co-lead"> Read the latest new and stories about </p>
+		   					<h3 class="main-title">Create a human voice for your brand business.</h3>
+							<p class="sub-title">Text-to-Speech (TTS) leverages neural network techniques to deliver a human-like, engaging, and personalized user experience with voice user interfaces (VUI). Enhance any customer self-service application with high-quality audio tailored to your brand.</p>   
+							<p><a href="#" class="btn btn-primary btn-lg">Lanjut</a></p>
 		   				</div>
 		   			</div>
 		   		</div>
 		   	</li>
 		  	</ul>
 	  	</div>
-    </aside>
+	</aside>
 
-    <div id="fh5co-value-tts" class="animate-box">
+   <div id="fh5co-value" class="animate-box">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6 col-md-offset-3 text-left fh5co-heading">
-					<h2>Magically generate sharable smart notes that sync audio, text, and image.</h2>
+					<h2>Magically generate sharable smart notes that sync audio and text</h2>
 				</div>
 				<div class="col-md-4 text-center item-block">
-					<span class="icon"><img src="<?php echo base_url().'theme/images/1.png'?>" class="img-responsive"></span>
-					<h3>Terbaik</h3>
+					<span class="icon"><img src="<?php echo base_url().'theme/images/notula/1.png'?>" class="img-responsive"></span>
+					<h3>RECORD</h3>
 					<p>Percayakan pekerjaan rutin kepada kecerdasan buatan untuk hasil yang akurat.</p>
 				</div>
 				<div class="col-md-4 text-center item-block">
-					<span class="icon"><img src="<?php echo base_url().'theme/images/2.png'?>" class="img-responsive"></span>
-					<h3>Terbaik</h3>
+					<span class="icon"><img src="<?php echo base_url().'theme/images/notula/2.png'?>" class="img-responsive"></span>
+					<h3>LIVE TRANSCRIBE</h3>
 					<p>Dengan otomatisasi, mempermudah pelanggan dalam mengakses layanan bisnis Anda.</p>
 				</div>
 				<div class="col-md-4 text-center item-block">
-					<span class="icon"><img src="<?php echo base_url().'theme/images/3.png'?>" class="img-responsive"></span>
-					<h3>Terbaik</h3>
+					<span class="icon"><img src="<?php echo base_url().'theme/images/notula/3.png'?>" class="img-responsive"></span>
+					<h3>SHARE</h3>
 					<p>AI dapat belajar dari data yang dikumpulkan untuk memprediksi kejadian di masa depan.</p>
 				</div>
 			</div>
@@ -119,10 +120,27 @@
 		</div>
 	</div>
 
+	<div id="fh5co-value" class="animate-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<h3>Text to Speech (Engine)</h3>
+					<p>TTS establishes a unique voice for your brand and maintains consistent caller experience across your IVR and mobile channels. Designed to empower high‑quality self‑service applications,  TTS creates natural sounding speech in 53 languages and 119 voice options. With Vocalizer, your brand can say whatever you want it to and whenever you need it to—without having to hire, brief or record voice talent.</p>
+					<p>A wide portfolio of human-sounding voices</p>
+					<p>Enhanced expressivity</p>
+					<p>Expanded multilingual support</p>
+					<p>AI-optimized text processing</p>
+					<p>The ability to create unique custom voice personas</p>
+					<p>Access to our newest voice, Zoe: a breakthrough in natural‑sounding automated voice</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<div id="fh5co-call-action" class="animate-box">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-8 text-call-action col-md-8">
+				<div class="col-lg-9 col-md-offset-0 text-call-action col-md-8">
 					<p>Tertarik untuk mendapatkan solusi Kecerdasan Buatan dengan kami</p>
 				</div>
 				<div class="col-md-1 col-md-push-1">
