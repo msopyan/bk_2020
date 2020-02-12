@@ -68,7 +68,7 @@
 	<aside id="fh5co-hero" class="js-fullheight">
 		<div class="flexslider js-fullheight">
 			<ul class="slides">
-		   	<li style="background-image: url(<?php echo base_url().'theme/images/background_home.png'?>);">
+		   	<li style="background-image: url(<?php echo base_url().'theme/images/background_hero_home.png'?>);">
 		   		<div class="overlay-gradient"></div>
 		   		<div class="container">
 		   			<div class="col-lg-8 text-left js-fullheight slider-text">
