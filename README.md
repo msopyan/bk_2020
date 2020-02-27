@@ -15,15 +15,21 @@ Pengetahuan yang dibutuhkan:
 3. [CSS](https://www.w3schools.com/css/)
 4. [PHP](https://www.php.net/)
 5. [CodeIgnither](https://codeigniter.com/)
-6. [Database SQL](https://www.mysql.com/)
+6. [Database SQL](https://mariadb.org/)
 
 Pastikan juga tool's pendung (XAMPP/WAMP/AMPPS ...) sudah terinstall di komputer development yang akan dipakai.
 
 1. [Download XAMPP](https://www.apachefriends.org/index.html)
 2. Install sesuai dengan OS yang dipakai.
+*Local server development
 
-
-### Installation and Running Development Server
+### Installation and Running Server
+1. git clone https://github.com/msopyan/bk_2020.git
+2. cd bk_2020
+3. Install Database yang tersedia di dalam package
+4. Configurasi database di folder config database.php
+* Sesuaikan dengan lokasi database, username, password dan nama database
+5. Selesai
 
 ### Folder Structure
 
@@ -36,11 +42,8 @@ Berikut adalah daftar folder penting yang dibutuhkan dalam membangun website ini
 - _./application/views_ : Berisi file template laman website
 
 #### *Assets*
-- _./src/public/assets_ : Berisi aset gambar yang digunakan pada laman website.
-- _./src/public/contents_ : Berisi konten tulisan yang digunakan pada laman website. Nama konten sesuai dengan halaman web yang ingin dituju.
-- _./src/public/lib_ : Berisi script javascript yang digunakan pada laman website. Script yang ditaruh disini berjalan pada sisi _front-end_ saja. 
-- _./src/public/styles_ : Berisi script css yang digunakan pada laman website.
-- _./src/public/build_ : (Dibuat otomatis oleh sistem) Berisi bundle javascript dan css yang telah dibuat sebelumnya pada _./src/public/lib_ dan _./src/public/styles_. *Jangan melakukan editing pada folder ini, karena pasti akan ditulis ulang oleh sistem*
+- _./assets_ : Berisi aset gambar dan file yang didapatkan dari json untuk digunakan pada laman website .
+- _./theme_ : Berisi yang digunakan untuk tampilan seperti css,js dll yang digunakan pada laman website.
 
 #### *System*
 Folder ini berisi file inti kerangka kerja. Tidak disarankan untuk membuat perubahan dalam direktori ini adalah composer.json dan composer.lock
@@ -51,10 +54,11 @@ Folder ini berisi file inti kerangka kerja. Tidak disarankan untuk membuat perub
 - _./composer.json_ : File konfigurasi node js.
 - _./.htaccess_ : File yang berisi konfigurasi webpack.
 - _./application/config/database.php_ : File yang berisi definisi server website. 
-- _./application/controller_ : File javascript laman website yang utama. Berisi runner on start.
-- _./application/models_ : File yang berisi basis laman HTML yang digunakan pada website. Masukkan library HTML CSS dan Javascript disini. Menggunakan pug.
-- _./application/view_ 
-
+- _./application/controller_ : File mian controller laman website yang utama. Berisi runner on start.
+- _./application/libraries_ : File liblary laman website yang digunakan untuk mengambil service.
+- _./application/models_ : File yang berisi model basis digunakan pada website. 
+- _./application/view_ : File yang berisi tampilan halaman website.
+ 
 ### Troubleshooting
 
 Apabila terjadi kendala dalam menjalankan sistem website-v4, Silakan hubungi tim developer di bawah ini. 
