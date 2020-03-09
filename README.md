@@ -1,7 +1,6 @@
 # Notula Website V4
 
-Selamat datang di Repository Notula Website V4.  Repository ini merupakan pusat dari semua kode yang dibutuhkan dalam membangun sistem Website V4. Website ini sendiri merupakan sebuah website yang dibangun khusus untuk kebutuhan PT. Bahasa Kinerja Utama.  
-
+Selamat datang di Repository Notula Website V4.  Repository ini merupakan pusat dari semua kode yang dibutuhkan dalam membangun sistem Website V4. Website ini sendiri merupakan sebuah website yang dibangun khusus untuk kebutuhan PT. Bahasa Kinerja Utama.  Untuk dokumentasi pengembangan bisa di akses di http://bit.ly/DocBKWebV4
 ## Getting Started
 
 Sebelum melakukan kontribusi untuk pengembangan sistem ini, diperlukan beberapa pengetahuan standar sebagai berikut: 
