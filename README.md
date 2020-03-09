@@ -1,6 +1,6 @@
 # Notula Website V4
 
-Selamat datang di Repository Notula Website V3.  Repository ini merupakan pusat dari semua kode yang dibutuhkan dalam membangun sistem Website V3. Website ini sendiri merupakan sebuah website yang dibangun khusus untuk kebutuhan PT. Bahasa Kinerja Utama.  
+Selamat datang di Repository Notula Website V4.  Repository ini merupakan pusat dari semua kode yang dibutuhkan dalam membangun sistem Website V4. Website ini sendiri merupakan sebuah website yang dibangun khusus untuk kebutuhan PT. Bahasa Kinerja Utama.  
 
 ## Getting Started
 
@@ -38,7 +38,8 @@ Berikut adalah daftar folder penting yang dibutuhkan dalam membangun website ini
 #### *Application*
 - _./application/config_ : Berisi fungsi yang dibutuhkan untuk menjalankan server website.
 - _./application/controllers_ : Berisi fungsi utilitas yang dapat digunakan untuk membantu dalam melakukan handling data flow. 
-- _./application/models_ : Berisi file yang dibutuhkan _routing server website_. Routes disini menuggunakan standar express.js.
+- _./application/models_ : Berisi file yang dibutuhkan _routing database website.
+- _./application/liblaries_ : Berisi file liblary yang digunakan pada website.
 - _./application/views_ : Berisi file template laman website
 
 #### *Assets*
