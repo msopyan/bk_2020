@@ -42,8 +42,11 @@ Berikut adalah daftar folder penting yang dibutuhkan dalam membangun website ini
 
 #### *Assets*
 - _./assets_ : Berisi aset yang digunakan untuk tampilan yang digunkan pada dashboard administrator.
-
+  1. Bootstrap version 3.3.7
+  2. Montserrat font
 - _./theme_ : Berisi aset yang digunakan untuk tampilan yang digunakan pada laman website.
+  1. Bootstrap version 3.3.7
+  2. Montserrat font
 
 #### *System*
 Folder ini berisi file inti kerangka kerja. Tidak disarankan untuk membuat perubahan dalam direktori ini adalah composer.json dan composer.lock
