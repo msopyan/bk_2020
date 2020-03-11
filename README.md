@@ -6,7 +6,6 @@ Selamat datang di Repository Notula Website V4.  Repository ini merupakan pusat 
 Sebelum melakukan kontribusi untuk pengembangan sistem ini, diperlukan beberapa pengetahuan standar sebagai berikut: 
 
 ### Prerequisites
-
 Pengetahuan yang dibutuhkan: 
 
 1. [Javascript](https://javascript.info)
@@ -42,14 +41,14 @@ Berikut adalah daftar folder penting yang dibutuhkan dalam membangun website ini
 - _./application/views_ : Berisi file template laman website
 
 #### *Assets*
-- _./assets_ : Berisi aset gambar dan file yang didapatkan dari json untuk digunakan pada laman website .
-- _./theme_ : Berisi yang digunakan untuk tampilan seperti css,js dll yang digunakan pada laman website.
+- _./assets_ : Berisi aset yang digunakan untuk tampilan yang digunkan pada dashboard administrator.
+
+- _./theme_ : Berisi aset yang digunakan untuk tampilan yang digunakan pada laman website.
 
 #### *System*
 Folder ini berisi file inti kerangka kerja. Tidak disarankan untuk membuat perubahan dalam direktori ini adalah composer.json dan composer.lock
 
 ### Important Files
-
 - _./index.php_ : File yang berisi runner untuk menjalankan server website.
 - _./composer.json_ : File konfigurasi node js.
 - _./.htaccess_ : File yang berisi konfigurasi webpack.
