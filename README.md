@@ -34,7 +34,7 @@ Pastikan juga tool's pendung (XAMPP/WAMP/AMPPS ...) sudah terinstall di komputer
 Berikut adalah daftar folder penting yang dibutuhkan dalam membangun website ini: 
 
 #### *Application*
-- _./application/config_ : Berisi fungsi yang dibutuhkan untuk menjalankan server website.
+- _./application/config_ : Berisi fungsi yang dibutuhkan untuk menjalankan website.
 - _./application/controllers_ : Berisi fungsi utilitas yang dapat digunakan untuk membantu dalam melakukan handling data flow. 
 - _./application/models_ : Berisi file yang dibutuhkan _routing database website.
 - _./application/liblaries_ : Berisi file liblary yang digunakan pada website.
@@ -55,7 +55,8 @@ Folder ini berisi file inti kerangka kerja. Tidak disarankan untuk membuat perub
 - _./index.php_ : File yang berisi runner untuk menjalankan server website.
 - _./composer.json_ : File konfigurasi node js.
 - _./.htaccess_ : File yang berisi konfigurasi webpack.
-- _./application/config/database.php_ : File yang berisi definisi server website. 
+- _./application/config/database.php_ : File yang berisi configurasi database website. 
+- _./application/config/router.php_ : File yang berisi routing server website.
 - _./application/controller_ : File mian controller laman website yang utama. Berisi runner on start.
 - _./application/libraries_ : File liblary laman website yang digunakan untuk mengambil service.
 - _./application/models_ : File yang berisi model basis digunakan pada website. 
